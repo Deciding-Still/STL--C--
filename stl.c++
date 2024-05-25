@@ -54,10 +54,10 @@ void explainpairs(){
     pair<int, int>p={1,3};
     cout<<p.first<<" "<<p.second;
     
-    pair<int,<pair<int, int>p= {1, {3,4}};
+    pair<int,<pair<int, int>p= {1, {3,4}};          //Nested property of pair
     cout<<p.first<<" "<<p.second.second<<" "<<p.second.first;
 
-    pair<int ,int>arr[] = {{1,2},{2,3},{3,4}};
+    pair<int ,int>arr[] = {{1,2},{2,3},{3,4}};      //declaration of pair array
     cout<<arr[1].second;
 
     for(int i=0;i<n;i++){
@@ -237,7 +237,7 @@ void explainstack(){
 
     cout<<st.size();    //3
 
-    cout<<st.size();    //true or false
+    cout<<st.empty();    //true or false
 
     stack<int>st1,st2;
     st1.swap(st2);
@@ -337,7 +337,7 @@ void explainSet(){
     //{1,2,3,4,5}
     auto it1=st.find(2);
     auto it2=st.find(4);
-    st.erase(t1,t2);    //erase everything between t1 to t2  (not t2) (1,4,5)
+    st.erase(it1,it2);    //erase everything between t1 to t2  (not t2) (1,4,5)
 
     //every thing takes O(logn)
 }
